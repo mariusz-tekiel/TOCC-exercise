@@ -62,10 +62,10 @@ $dog->info();
 //    Overloading lets us dynamically create properties and methods. 
 //    The overloading methods are invoked when interacting with properties or methods that have not been visible in the current scope. 
 
-    public __set(string $name, mixed $value): void
-    public __get(string $name): mixed
-    public __isset(string $name): bool
-    public __unset(string $name): void
+    // public __set(string $name, mixed $value): void
+    // public __get(string $name): mixed
+    // public __isset(string $name): bool
+    // public __unset(string $name): void
 
     // __set() is run when writing data to inaccessible (protected or private) or non-existing properties.
 

@@ -1,0 +1,43 @@
+/* Style the header with a grey background and some padding */
+html {
+  height: 100%;
+}
+
+body {
+  
+  background-color: rgb(36, 38, 41) !important;
+  background-image: "images/ST-SummerNights_1025x400.jpg" important!;
+  font-family: "Lato", sans-serif;  
+  margin: 0 !important;
+  
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  position: relative;  
+}
+
+.container {
+  color:rgb(240, 240, 196);
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+#main-header{
+    color:rgb(237, 245, 163);
+}
+
+#question{
+    color:white;
+}
+
+.row{
+    text-align:center important!;
+}
+
+.header{
+    font-size:7em;
+    text-align:center;
+    color:wheat;
+}
+

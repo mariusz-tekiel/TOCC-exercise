@@ -1,11 +1,14 @@
 <?php include("head.php"); ?>
 
 <body>
-    <div class="container">
-        <h1>Show Data</h1>
-        <table class="table">
+    <div class="header">
+        <h1>Customer Data</h1>
+    </div>
+</div>
+    <div class="container">    
+        <table class="table table-bordered">
             <thead>
-                <th>Title</th><th>Surname</th><th>Email</th><th>Message</th>
+                <th>TITLE</th><th>SURNAME</th><th>EMAIL</th><th>MESSAGE</th>
             </thead>
             <tbody>
                 <?php
@@ -16,7 +19,6 @@
                 ?>
             </tbody>
         </table>
-
     </div>
 </body>
 </html>
