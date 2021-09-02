@@ -17,6 +17,7 @@
         }    
         fclose($dfOrder);
         fclose($sfData); 
+        echo "<p>File order.csv has been created<p>";
     };
 
     //Function creating file customer.csv which represents content of Entity "customer"
@@ -36,6 +37,7 @@
             fwrite($dfCustomer,$current);
         }        
         fclose($dfCustomer);
+        echo "<p>File customer.csv has been created </p>";
     };
     
     //Function creating file item.csv which represents content of Entity "item"
@@ -54,6 +56,7 @@
             fwrite($dfItem,$current);
         }         
         fclose($dfItem);
+        echo "<p>File item.csv has been created</p>";
     };
 
     //Function creating file order_to_item.csv which represents content of Entity "order_to_item"
@@ -70,6 +73,7 @@
             fwrite($sfOrderToItem,$current);
         }         
         fclose($sfOrderToItem);
+        echo "<p>File order_to_item.csv has been created</p>";
     };
 
     orderFile();
