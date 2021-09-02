@@ -1,8 +1,8 @@
 <?php 
 // ============= CLASS ===============
-    // In Object Oriented PHP objects are created using classes. 
-    // The class describes what the object will be.
-    // The class can be also thought as an object's blueprint. 
+//     In Object Oriented PHP objects are created using classes. 
+//     The class describes what the object will be.
+//     The class can be also thought as an object's blueprint. 
     
 class Animal {
     public $name;   
