@@ -4,7 +4,7 @@
     <h1>WWW.SUFFOLK-HOLIDAYS.CO.UK</h1>
     <div class="container">
         <h2>Want to buy this domain?</h2>
-        <form action="show_data.php">
+        <form action="show_data.php" method="POST">
             <div class="form-group">      
                 <input type="text" class="form-control" id="title" placeholder="Title" name="title">
             </div>
