@@ -6,95 +6,69 @@
 
         while ($row = fgetcsv($sfData,10000,","," ")) { 
             $orderNumber = "";
-            $orderNumber = str_replace("¦",",",$row[0]); 
-            
+            $orderNumber = str_replace("¦",",",$row[0]);             
             $customerNumber = "";
-            $customerNumber = str_replace("¦",",",$row[2]); 
-            
+            $customerNumber = str_replace("¦",",",$row[2]);             
             $orderDate = "";
-            $orderDate = str_replace("¦",",",$row[1]); 
-        
+            $orderDate = str_replace("¦",",",$row[1]);         
             $current = "";
             $current .= $orderNumber.",".$customerNumber.",".$orderDate.","."\n"; 
-
-        fwrite($dfOrder,$current);
+            fwrite($dfOrder,$current);
         }    
         fclose($dfOrder);
         fclose($sfData); 
     };
 
     //Function creating file customer.csv which represents content of Entity "customer"
-    function customerFile(){
-        
+    function customerFile(){        
         $sfData = fopen('source_data.csv','r');
         $dfCustomer = fopen('customer.csv','w'); 
 
-        while ($row = fgetcsv($sfData,10000,","," ")) { 
-            
+        while ($row = fgetcsv($sfData,10000,","," ")) {             
             $customerNumber = "";
-            $customerNumber = str_replace("¦",",",$row[2]); 
-            
+            $customerNumber = str_replace("¦",",",$row[2]);             
             $firstName = "";
-            $firstName = str_replace("¦",",",$row[3]); 
-        
+            $firstName = str_replace("¦",",",$row[3]);         
             $familyName = "";
-            $familyName = str_replace("¦",",",$row[4]); 
-        
+            $familyName = str_replace("¦",",",$row[4]);        
             $current = "";
-            $current .= $customerNumber.",".$firstName.",".$familyName.","."\n"; 
-            
-        fwrite($dfCustomer,$current);
-        } 
-        
+            $current .= $customerNumber.",".$firstName.",".$familyName.","."\n";            
+            fwrite($dfCustomer,$current);
+        }        
         fclose($dfCustomer);
     };
     
     //Function creating file item.csv which represents content of Entity "item"
-    function itemFile(){
-        
+    function itemFile(){        
         $sfData = fopen('source_data.csv','r');
         $dfItem = fopen('item.csv','w'); 
-
-        while ($row = fgetcsv($sfData,10000,","," ")) { 
-            
+        while ($row = fgetcsv($sfData,10000,","," ")) {             
             $itemNumber = "";
-            $itemNumber = str_replace("¦",",",$row[5]); 
-            
+            $itemNumber = str_replace("¦",",",$row[5]);             
             $description = "";
-            $description = str_replace("¦",",",$row[6]); 
-        
+            $description = str_replace("¦",",",$row[6]);        
             $cost = "";
-            $cost = str_replace("¦",",",$row[7]); 
-        
+            $cost = str_replace("¦",",",$row[7]);         
             $current = "";
-            $current .= $itemNumber.",".$description.",".$cost.","."\n"; 
-            
-        fwrite($dfItem,$current);
-        } 
-        
+            $current .= $itemNumber.",".$description.",".$cost.","."\n";             
+            fwrite($dfItem,$current);
+        }         
         fclose($dfItem);
     };
 
     //Function creating file order_to_item.csv which represents content of Entity "order_to_item"
-    function orderToItemFile(){
-        
+    function orderToItemFile(){        
         $sfData = fopen('source_data.csv','r');
         $sfOrderToItem = fopen('order_to_item.csv','w'); 
-
-        while ($row = fgetcsv($sfData,10000,","," ")) { 
-                                    
+        while ($row = fgetcsv($sfData,10000,","," ")) {                                     
             $orderNumber = "";
-            $orderNumber = str_replace("¦",",",$row[0]); 
-        
+            $orderNumber = str_replace("¦",",",$row[0]);        
             $itemNumber = "";
-            $itemNumber = str_replace("¦",",",$row[5]); 
-        
+            $itemNumber = str_replace("¦",",",$row[5]);         
             $current = "";
-            $current .= $orderNumber.",".$itemNumber.","."\n"; 
-            
-        fwrite($sfOrderToItem,$current);
-        } 
-        
+            $current .= $orderNumber.",".$itemNumber.","."\n";             
+            fwrite($sfOrderToItem,$current);
+        }         
         fclose($sfOrderToItem);
     };
 

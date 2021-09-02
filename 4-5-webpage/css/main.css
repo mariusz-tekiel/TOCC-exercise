@@ -1,24 +1,18 @@
 /* Style the header with a grey background and some padding */
 html {
-  	height: 100%;
+  height: 100%;
 }
 
-body {
-  
+body {  
 	background-color: rgb(36, 38, 41) !important;
-	background-image: url("../images/ST-SummerNights_1025x400.jpg");
-	
+	background-image: url("../images/ST-SummerNights_1025x400.jpg");	
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
-
-
 	height: 100vh;
 	font-family: "Lato", sans-serif;  
-	margin: 0 !important;
-	
+	margin: 0 !important;	
 	padding: 0;
 	height: 100%;
 	min-height: 100%;
@@ -34,26 +28,25 @@ body {
 
 #main-header{
 	text-align:left;
-    color:rgb(237, 245, 163);
+  color:rgb(237, 245, 163);
 }
 
 #question{
-    color:white;
+  color:white;
 }
 
 .row{
-    text-align:center important!;
+  text-align:center important!;
 }
 
-.header{
-   
-    text-align:center;
-    color:rgb(255, 212, 21);
+.header{   
+	text-align:center;
+	color:rgb(255, 212, 21);
 }
 
 #bottom-banner{	
-    text-align:right;
-    color:rgb(229, 231, 221);
+  text-align:right;
+  color:rgb(229, 231, 221);
 	position:fixed;
 	left:0px;
 	right:0px;
