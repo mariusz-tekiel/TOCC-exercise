@@ -11,7 +11,8 @@ body {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;}
+	background-size: cover;
+
 
 
 	height: 100vh;
@@ -28,7 +29,7 @@ body {
 	color:rgb(240, 240, 196);
 	margin-left: auto;
 	margin-right: auto;
-	height: 100%;
+	height: 85%;
 }
 
 #main-header{
@@ -45,20 +46,25 @@ body {
 }
 
 .header{
-    font-size:7em;
+   
     text-align:center;
-    color:wheat;
+    color:rgb(255, 212, 21);
 }
 
 #bottom-banner{	
-    text-align:center;
-    color:wheat;
+    text-align:right;
+    color:rgb(229, 231, 221);
 	position:fixed;
 	left:0px;
 	right:0px;
 	bottom:0px;
 	height:80px;
-	width:100%;
-	background:rgb(70, 64, 64);
-	text-capacity:30%;
+	width:105%;
+	background:rgb(2, 2, 2);
+	opacity:0.6;
+}
+
+table{
+	color:rgb(14, 4, 66);
+	background-color: dark;
 }

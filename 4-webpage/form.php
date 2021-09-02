@@ -1,11 +1,11 @@
 <?php include("head.php"); ?>
 
 <body>    
-    <section>
+      
         <div class="container">
             <div class="row">
                 <div class="col-sm-12   ">
-                    <h3 id="main-header">WWW.SUFFOLK-HOLIDAYS.CO.UK</h3>
+                    <h3 id="main-header">www.suffolk-holidays.co.uk</h3>
                 </div>
             </div>
                    
@@ -32,11 +32,11 @@
                 </div>
             </div>
             <div class="row" id="bottom-banner">
-                <div class="col-sm-12">
+                <div class="col-sm-11">
                     <h1 id="question">Want to buy this domain?</h1>
                 </div>
             </div>   
         </div>
-    </section>
+    
 </body>
 </html>
