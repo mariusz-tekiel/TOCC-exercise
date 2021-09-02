@@ -1,22 +1,18 @@
 <?php include("head.php"); ?>
 
 <body>    
-    <section class="text-center">
+    <section>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12   ">
                     <h3 id="main-header">WWW.SUFFOLK-HOLIDAYS.CO.UK</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1 id="question">Want to buy this domain?</h1>
-                </div>
-            </div>        
+                   
             <div class="row">
                 <div class="col-xs-2 col-sm-4 ">
             </div>
-                <div class="col-xs-8 col-sm-4 ">
+                <div class="col-xs-8 col-sm-4 text-center">
                     <form action="show_data.php" method="POST">
                         <div class="form-group">      
                             <input type="text" class="form-control" id="title" placeholder="Title" name="title">
@@ -34,7 +30,12 @@
                         <button type="submit" class="btn btn-success">Enquire now</button>
                     </form>
                 </div>
-            </div>  
+            </div>
+            <div class="row" id="bottom-banner">
+                <div class="col-sm-12">
+                    <h1 id="question">Want to buy this domain?</h1>
+                </div>
+            </div>   
         </div>
     </section>
 </body>
