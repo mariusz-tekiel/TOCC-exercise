@@ -5,7 +5,7 @@
         <div class="header">
             <h1>Customer Data</h1>
         </div>
-        <table class="table table-bordered">
+        <table class="table table-bordered table-dark">
             <thead >
                 <th>TITLE</th><th>SURNAME</th><th>EMAIL</th><th>MESSAGE</th>
             </thead>
