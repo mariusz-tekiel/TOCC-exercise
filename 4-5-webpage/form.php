@@ -7,10 +7,10 @@
 				<h3 id="main-header">www.suffolk-holidays.co.uk</h3>
 			</div>                          
 		</div>
-		<div class="row">
+		<div class="row" id="space">
 			<div class="col-xs-2 col-sm-4 ">
 		</div>
-		<div class="col-xs-8 col-sm-4 text-center">
+		<div class="col-xs-8 col-sm-4 text-center" id="form-wrap">
 			<form action="show_data.php" method="POST">
 				<div class="form-group">      
 					<input type="text" class="form-control" id="title" placeholder="Title" name="title">
