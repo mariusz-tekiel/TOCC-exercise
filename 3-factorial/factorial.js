@@ -1,4 +1,4 @@
-// To calulate factorial of given number I use the recursive function
+// To calculate factorial of given number I use the recursive function
 
 function factorial(num){
   if(num<0){
