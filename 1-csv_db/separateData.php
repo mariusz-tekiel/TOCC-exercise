@@ -44,6 +44,7 @@
     function itemFile(){        
         $sfData = fopen('source_data.csv','r');
         $dfItem = fopen('item.csv','w'); 
+
         while ($row = fgetcsv($sfData,10000,","," ")) {             
             $itemNumber = "";
             $itemNumber = str_replace("¦",",",$row[5]);             
@@ -63,6 +64,7 @@
     function orderToItemFile(){        
         $sfData = fopen('source_data.csv','r');
         $sfOrderToItem = fopen('order_to_item.csv','w'); 
+        
         while ($row = fgetcsv($sfData,10000,","," ")) {                                     
             $orderNumber = "";
             $orderNumber = str_replace("¦",",",$row[0]);        
