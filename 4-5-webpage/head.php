@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
 	<title>Suffolk Holidays</title>
 	<meta charset="utf-8">
