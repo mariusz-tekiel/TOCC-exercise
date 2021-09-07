@@ -1,6 +1,6 @@
 <?php include("head.php"); ?>
 
-<body >
+<body>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 text-lg-left text-center">
