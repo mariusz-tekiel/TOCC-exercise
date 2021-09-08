@@ -69,9 +69,14 @@
             $orderNumber = "";
             $orderNumber = str_replace("¦",",",$row[0]);        
             $itemNumber = "";
-            $itemNumber = str_replace("¦",",",$row[5]);         
+            $itemNumber = str_replace("¦",",",$row[5]);
+            $quantity = "";
+            $quantity = str_replace("¦",",",$row[8]);
+            $total = "";
+            $total = str_replace("¦",",",$row[9]);
+            
             $current = "";
-            $current .= $orderNumber.",".$itemNumber.","."\n";             
+            $current .= $orderNumber.",".$itemNumber.",".$quantity.",".$total.","."\n";             
             fwrite($sfOrderToItem,$current);
         }         
         fclose($sfOrderToItem);
